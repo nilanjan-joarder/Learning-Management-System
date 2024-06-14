@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+</head>
+
+
+<body>
+    <nav class="nav-bar">
+        <a href="index.html">
+            <p>Home</p>
+        </a>
+        <a href="aboutus.html">
+            <p>About</p>
+        </a>
+        <a href="courses.html">
+            <p>Courses</p>
+        </a>
+        <a href="contactus.html">
+            <p>Contact</p>
+        </a>
+    </nav>
+
+    <div class="profile" onclick="hello()"><img src="images/dashboard-person.png" alt="" id="profile-image">
+    </div>
+    <div id="options">
+        <a href="login.php">
+            <div class="dashboard">MY DASHBOARD</div>
+        </a>
+        <a href="logout.php">
+            <div class="logout">LOGOUT</div>
+        </a>
+    </div>
+
+    <h1 id="about-text">About our company</h1>
+<div class="first-row-about">
+    <img src="images/modern-equipped-computer-lab.jpg" alt="" srcset="" id="first-row-image-about">
+    <p id="first-row-text-about">We're committed to revolutionizing education through innovative eLearning solutions that break down barriers and empower learners worldwide. With cutting-edge technology and pedagogical expertise, we craft engaging, interactive content tailored to diverse needs and preferences. Our mission is simple: to make learning accessible anytime, anywhere. But we're not just about content—we're also passionate about building a vibrant learning community where connections thrive and collaboration flourishes. Here, we believe in the power of knowledge to transform lives and drive positive change. That's why we're dedicated to empowering individuals, educators, and businesses alike to unlock their full potential. Join us on this journey of discovery and growth. Welcome to the future of education. </p>
+</div>
+<div class="first-row-about">    
+    <p id="first-row-text-about">Here teaching isn't just a job—it's our passion and commitment to excellence. We take pride in our ability to deliver exceptional learning experiences that leave a lasting impact on our students. What sets us apart is our dedication to innovative and effective teaching methods tailored to the individual needs of each learner. From engaging multimedia presentations to interactive discussions and real-world applications, we strive to make learning both enjoyable and meaningful. Our team of experienced educators is committed to fostering a supportive and inspiring environment where students can thrive academically and personally. With a track record of success and countless satisfied students, we're confident in our ability to help you reach your learning goals. Join us and discover the transformative power of quality teaching. Welcome to a brighter future filled with endless possibilities.</p>
+    <img src="images/side-view-students-learning-together.jpg" alt="" srcset="" id="first-row-image-about">
+</div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">career</a></li>
+                        <li><a href="#">blogs</a></li>
+                        <li><a href="#">help and support</a></li>
+                        <li><a href="#">investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>terms</h4>
+                    <ul>
+                        <li><a href="#">privacy and policiy</a></li>
+                        <li><a href="#">cookie setting</a></li>
+                        <li><a href="#">sitemap</a></li>
+                        <li><a href="#">accessibility statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+   
+  </body>
+</html>
+<script>
+    
+    function hello() {
+      var logout = document.getElementById("options");
+      if (logout.style.display === "none") {
+        logout.style.display = "block";
+        logout.style.visibility = "visible";
+  
+      } else {
+        logout.style.display = "none";
+        logout.style.visibility = "hidden";
+      }
+      console.log("hello");
+    }
+  
+  </script>
+</html>
