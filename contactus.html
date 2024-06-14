@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <a href="index.html">
+            <p>Home</p>
+        </a>
+        <a href="aboutus.html">
+            <p>About</p>
+        </a>
+        <a href="courses.html">
+            <p>Courses</p>
+        </a>
+        <a href="contactus.html">
+            <p>Contact</p>
+        </a>
+    </nav>
+
+    <div class="profile" onclick="hello()"><img src="images/dashboard-person.png" alt="" id="profile-image">
+    </div>
+    <div id="options">
+        <a href="login.php">
+            <div class="dashboard">MY DASHBOARD</div>
+        </a>
+        <a href="logout.php">
+            <div class="logout">LOGOUT</div>
+        </a>
+    </div>
+    <div class="first-row-contact">
+        <div class="contact-informations">
+            <p id="contact-info-title">CONTACT INFO</p>
+            <div style="display: flex;">
+                <div class="social-box">
+                    <img src="images/mail-icon-black.png" id="mail-icon">
+                </div>
+                <div class="right">
+                    <span>MAIL US</span>
+                    <h4>info@techlearnshub.com</h4>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="social-box">
+                    <img src="images/call-icon-black.png" id="call-icon">
+                </div>
+                <div class="right">
+                    <span>CALL ME</span>
+                    <h4>+91 1234567890</h4>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="social-box">
+                    <img src="images/location-icon-black.png" id="location-icon">
+                </div>
+                <div class="right">
+                    <span>LOCATION</span>
+                    <h4>Saltlake, West Bengal, India</h4>
+                </div>
+            </div>
+            <p id="social-info-title">SOCIAL INFO</p>
+            <div class="social-info-contact">
+                <a href="https://www.linkedin.com/in/adhiraj-chakrabarti-0934172a3/"><div class="icons"><img src="images/linkedin-black.png" id="linkedin-icons"></div></a>
+                <a href="https://www.instagram.com/theway_isaw/"><div class="icons"><img src="images/Instagram-black.png" id="instagram-icons"></div></a>
+                <a href="https://www.facebook.com/profile.php?id=100083058308713"><div class="icons"><img src="images/facebook-icon-black.png" id="facebook-icons"></div></a>
+            </div>
+        </div>
+
+
+        <div class="contact-form">
+
+            
+            <input type="text" placeholder="Name" id="input-text">
+            <input type="email" placeholder="Email" id="input-text">
+            <input type="text" placeholder="Subject" id="input-text">
+            <textarea name=""   placeholder="Message" id="message-text"></textarea>
+            <button type="submit" id="send-message">Send Message</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">career</a></li>
+                        <li><a href="#">blogs</a></li>
+                        <li><a href="#">help and support</a></li>
+                        <li><a href="#">investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>terms</h4>
+                    <ul>
+                        <li><a href="#">privacy and policiy</a></li>
+                        <li><a href="#">cookie setting</a></li>
+                        <li><a href="#">sitemap</a></li>
+                        <li><a href="#">accessibility statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+
+<script>
+    
+    function hello() {
+      var logout = document.getElementById("options");
+      if (logout.style.display === "none") {
+        logout.style.display = "block";
+        logout.style.visibility = "visible";
+  
+      } else {
+        logout.style.display = "none";
+        logout.style.visibility = "hidden";
+      }
+      console.log("hello");
+    }
+  
+  </script>
+</html>

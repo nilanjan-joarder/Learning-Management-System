@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    	
+/* body{margin-top:20px;
+background-color:#f2f6fc;
+color:#69707a;
+} */
+a{
+  text-decoration: none;
+  color: black;
+}
+.desktopnav
+{
+    background-image: linear-gradient(to bottom, #5356FF, #378CE7,#67C6E3);
+    height: 100vh;
+    width: 200px;
+    position: fixed;      
+}
+#logo{
+    display:flex ;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: fit-content;
+    margin-left: 50px;
+    padding-top: 80px;
+}
+.nav-icons{
+height: 22px;
+width: fit-content;
+margin-top: 50px;
+display: flex;
+margin-left: 20px;
+}
+#dashboard-icon{
+  margin-left: 0px;
+}
+#nav-text{
+    display:flex ;
+    display: flex;
+    font-size: 15px;
+    width: 110px;
+    margin-left: 60px;
+    margin-top: -22px;
+    color: white;
+} 
+.main-content
+{
+    background-color: #ececec;
+    margin-left: 200px;
+    height: 100vh;
+}
+.search-bar{
+    height: 40px;
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 25px;
+    border: 1px solid gray;
+    visibility: hidden;
+}
+input
+{
+    padding-left: 20px;
+    font-size: 15px;
+}
+#search-icon{
+    display: flex;
+    height: 16px;
+    margin-left: 900px;
+    margin-top: -30px;
+    visibility: hidden;
+}
+.profile
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #378CE7;
+  display: flex;
+  margin-top: -32px;
+  margin-left: 1200px;
+  border: 1px solid gray
+}
+#profile-image
+{
+  height: 50px;
+}
+#logout {
+  height: 62px;
+  width: 170px;
+  margin-left: 1080px;
+  margin-top: 10px;
+  border: 0.5px solid black;
+  z-index: 9;
+  position:absolute;
+  backdrop-filter: (50px);
+  background-color: rgba(255, 255, 255, 0.923);
+  display: none;
+  cursor: pointer;
+  visibility: hidden;
+}
+.dashboard{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  align-items: center;
+}
+.logout{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  align-items: center;
+}
+
+        h1 {
+            margin-left: -150px;
+            margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+        }
+        .container {
+           
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .answer {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktopnav" >
+        <p id="logo">LOGO</p>
+       
+        <img src="images/iconoir_home.png" alt="" srcset="" class="nav-icons" >
+        <a href="dashboard.php" style="text-decoration: none;">
+          <p id="nav-text"  >Dashboard</p>
+        </a>
+        
+        <img src="images/icon-park-outline_retro-bag.png" alt="" srcset="" class="nav-icons">
+            <a href="purchased.php" style="text-decoration: none;">
+              <p id="nav-text">Purchased</p>
+            </a>
+        <img src="images/iconoir_notes.png" alt="" srcset="" class="nav-icons">
+        <a href="notes.php" style="text-decoration: none;">
+          <p class="nav-bar-notes" id="nav-text">Notes</p>
+        </a>
+        <img src="images/fluent_certificate-16-regular.png" alt="" srcset="" class="nav-icons">
+        <a href="certificates.php" style="text-decoration: none;">
+          <p class="nav-bar-certificates" id="nav-text">Certificates</p>
+        </a>
+        <img src="images/uil_setting.png" alt="" srcset="" class="nav-icons">
+        <a href="settings.php" style="text-decoration: none;">
+          <p class="nav-bar-setting" id="nav-text">Settings</p>
+        </a>
+      </div>
+      <div class="main-content">
+        <input type="text" placeholder="Search" class="search-bar">
+        <br>
+        <img src="images/ri_search-line.png" alt="" srcset="" id="search-icon">
+            <button class="profile" onclick="toggleLogout()" >
+                <img src="images/dashboard-person.png" alt="" id="profile-image">
+              </button>
+              <div id="logout"> 
+               <a href="dashboard.php"> <div class="dashboard">DASHBOARD</div></a>
+                <a href="logout.php"><div class="logout">LOGOUT
+                  
+                </div></a>
+              </div>
+    <div class="container">
+        <h1>Help and Support</h1>
+
+        <div class="faq-item">
+            <div class="question">How do I sign up for an account?</div>
+            <div class="answer">To sign up for an account, click on the "Sign Up" button at the top right corner of the page. Then, fill out the registration form with your details and click "Sign Up".</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How do I reset my password?</div>
+            <div class="answer">If you've forgotten your password, you can reset it by clicking on the "Forgot Password" link on the login page. Enter your email address and follow the instructions sent to your email to reset your password.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How do I enroll in a course?</div>
+            <div class="answer">To enroll in a course, browse through the available courses and click on the one you're interested in. Then, click on the "Enroll" button and follow the prompts to complete the enrollment process.</div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

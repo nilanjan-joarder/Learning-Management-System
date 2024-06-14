@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header,
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    #description{
+        margin-left: 40px;
+    }
+   #video-recording{
+    margin-left: -200px;
+    font-size: 30px;
+    width: fit-content;
+   }
+
+    #description-descrription {
+        width: 1100px;
+        color: black;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+    h3{
+        margin-left: 10px;
+        margin-top: -20px;
+    }
+    table{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    margin-top: 110px;
+    background-color: #24262b;
+      padding: 40px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: rgb(3, 167, 255);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+</style>
+</head>
+
+<body>
+    <div class="desktopnav" >
+        <p id="logo">LOGO</p>
+        
+        <img src="images/iconoir_home.png" alt="" srcset="" class="nav-icons" >
+        <a href="dashboard.php" style="text-decoration: none;">
+          <p  >Dashboard</p>
+        </a>
+        
+        <img src="images/icon-park-outline_retro-bag.png" alt="" srcset="" class="nav-icons">
+            <a href="purchased.php" style="text-decoration: none;">
+              <p>Purchased</p>
+            </a>
+            <div  style="border-bottom:2px solid white; width:fit-content; margin-left:20px; padding-bottom:10px;" ;>
+        <img src="images/iconoir_notes.png" alt="" srcset="" class="nav-icons" id="dashboard-icon">
+        <a href="notes.php" style="text-decoration: none;">
+          <p class="nav-bar-notes" style="margin-left:40px">Notes</p>
+        </a>
+    </div>
+        <img src="images/fluent_certificate-16-regular.png" alt="" srcset="" class="nav-icons">
+        <a href="certificates.php" style="text-decoration: none;">
+          <p class="nav-bar-certificates">Certificates</p>
+        </a>
+        <img src="images/uil_setting.png" alt="" srcset="" class="nav-icons">
+        <a href="settings.php" style="text-decoration: none;">
+          <p class="nav-bar-setting">Settings</p>
+        </a>
+      </div>
+    <div class="main-content-course">
+        <input type="text" placeholder="Search" class="search-bar" style="visibility: hidden;">
+        <br>
+        <img src="images/ri_search-line.png" alt="" srcset="" id="search-icon" style="visibility: hidden;">
+        <button class="profile" onclick="toggleLogout()">
+            <img src="images/dashboard-person.png" alt="" id="profile-image">
+        </button>
+        <div id="logout">
+            <a href="dashboard.php">
+                <div class="dashboard">DASHBOARD</div>
+            </a>
+            <a href="logout.php">
+                <div class="logout">LOGOUT
+
+                </div>
+            </a>
+        </div>
+        <header>
+            <h1 id="video-recording">React - The Complete Guide 2024 (incl. React Router & Redux)</h1>
+        </header>
+
+        <section id="description">
+            <h3>Description:</h3>
+            <p id="description-descrription">Dive into React.js from scratch and master its core concepts, including React, Hooks, Redux, React Router, and Next.js. This comprehensive course covers everything from building basic components to advanced state management and server-side rendering. Learn best practices for efficient development and explore a wide range of topics to become a proficient React developer. Whether you're a beginner or looking to level up your skills, this course offers a deep dive into React.js, equipping you with the knowledge and tools needed to build powerful and scalable web applications. Embark on your React journey today and unlock endless possibilities!</p>
+        </section>
+
+        <section id="video">
+            <h2>Video:</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RGKi6LSPDLU?si=I3Ctv-he8zL1UuQN" frameborder="0"
+                allowfullscreen></iframe>
+        </section>
+
+        <section id="random-text">
+            <h2>Content Table</h2>
+           
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Topic</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Introduction to ReactJS</td>
+                        <td>An overview of ReactJS, its features, and why it's used.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>2</td>
+                        <td>Setting Up Development Environment</td>
+                        <td>How to set up a development environment for ReactJS using tools like Node.js and npm.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Components and Props</td>
+                        <td>Understanding React components, props, and their role in building UIs.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>State and Lifecycle</td>
+                        <td>Managing component state and lifecycle methods in React.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Handling Events</td>
+                        <td>How to handle events in React and update component state accordingly.</td>
+                    </tr>
+                    <!-- Add more rows for additional weeks/topics -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+   
+</body>
+
+</html>
